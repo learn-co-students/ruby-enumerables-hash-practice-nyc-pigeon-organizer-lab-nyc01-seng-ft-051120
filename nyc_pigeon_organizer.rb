@@ -47,9 +47,13 @@ def nyc_pigeon_organizer(data)
   end
 
 
-  add_color(data, new_data, names)
-  add_gender(data, new_data, names)
-  add_lives(data, new_data, names)
+  def add_attributes(data, new_data, names)
+    add_color(data, new_data, names)
+    add_gender(data, new_data, names)
+    add_lives(data, new_data, names)
+  end
+
+  add_attributes(data, new_data, names)
 
   new_data
 end
